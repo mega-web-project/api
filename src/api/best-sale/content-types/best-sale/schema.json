@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "best_sales",
+  "info": {
+    "singularName": "best-sale",
+    "pluralName": "best-sales",
+    "displayName": "best_sale"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

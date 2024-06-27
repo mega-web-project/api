@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "userprofiles",
+  "info": {
+    "singularName": "userprofile",
+    "pluralName": "userprofiles",
+    "displayName": "userprofile"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fullname": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "town": {
+      "type": "string"
+    },
+    "profileImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "gender": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "text"
+    },
+    "usersId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}
